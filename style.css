@@ -34,3 +34,30 @@ body {
 .row {
   display: block;
 }
+
+html {
+  background: green;
+}
+
+/* Maße fürs Taplet */
+@media (min-width: 768px) and (max-width: 1169px) {
+  html {
+    background: yellow;
+  }
+  .row {
+    display: flex;
+  }
+}
+
+/* Maße fürs PC */
+@media (min-width: 1170px) {
+  html {
+    background: red;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  .row {
+    display: flex;
+  }
+}
